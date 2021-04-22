@@ -1,19 +1,13 @@
 import React from "react";
 import { Breadcrumb } from "antd";
-
-interface PropsInterface {
-  url: string;
-  icon?: any;
-}
+import { PropsInterface } from './schema'
 
 export default class RouterBreadcrumb extends React.Component<
-  PropsInterface,
-  {}
+  PropsInterface
 > {
   
   constructor(props: PropsInterface) {
     super(props);
-    // this.state = { dataSource: this.getDataSource() };
   }
 
   getDataSource() {
